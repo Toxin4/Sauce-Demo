@@ -28,7 +28,7 @@ describe('SauceDemo', () => {
     cy.contains('0').should('be.visible')
   })
 
-  it.only('VISUALIZAÇÃO DE PRODUTO NO CARRINHO - Após o login de um usuário válido, em uma listagem de produtos, um produto adicionado ao carrinho, pode ser visualizado na página do carrinho', () => {
+  it('VISUALIZAÇÃO DE PRODUTO NO CARRINHO - Após o login de um usuário válido, em uma listagem de produtos, um produto adicionado ao carrinho, pode ser visualizado na página do carrinho', () => {
     cy.get('#add-to-cart-sauce-labs-backpack').click()
     cy.get('#shopping_cart_container').click()
     cy.contains('Remove').should('be.visible')
